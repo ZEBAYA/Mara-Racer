@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 9209144462141168305}
   - component: {fileID: 7745067674436291671}
   - component: {fileID: 6690955963761913415}
+  - component: {fileID: 7182754652870338695}
+  - component: {fileID: 8145053408522294733}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -83,3 +85,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7182754652870338695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4560314613795460613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa50cbd41784c13468b738d06a61902a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+--- !u!114 &8145053408522294733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4560314613795460613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef7d7eca03877ae44b97cc631db5d8f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
