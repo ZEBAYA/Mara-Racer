@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class DestroyOutOfBounds : MonoBehaviour
 {
-    public class DestroyOutOfBoundsX : MonoBehaviour
+    public float destroyDistance = -9.0f; // The distance at which obstacles should be destroyed.
+
+    void Update()
     {
-        private float backLimit = -1;
+        GameObject[] obstacles = GameObject.FindGameObjectsWithTag("Obstacle"); // Assuming obstacles have the "Obstacle" tag.
 
-
-        // Update is called once per frame
-        void Update()
+        foreach (var obstacle in obstacles)
         {
-            // Destroy obstacle if z position less than back limit
-            if (transform.position.z < backLimit)
+            float distance = Vector3.Distance(transform.position, obstacle.transform.position);
+
+            if (distance > destroyDistance)
             {
-                Destroy(gameObject);
+                Destroy(obstacle); // Destroy the obstacle if it's beyond the destroyDistance.
             }
         }
     }
+
 }
