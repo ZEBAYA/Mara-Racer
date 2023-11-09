@@ -8,7 +8,11 @@ public class DestroyOutOfBounds : MonoBehaviour
 
     void Update()
     {
+<<<<<<< Updated upstream
         GameObject[] obstacles = GameObject.FindGameObjectsWithTag("Obstacle"); // Assuming obstacles have the "Obstacle" tag.
+=======
+        private float backLimit = -8;
+>>>>>>> Stashed changes
 
         foreach (var obstacle in obstacles)
         {
